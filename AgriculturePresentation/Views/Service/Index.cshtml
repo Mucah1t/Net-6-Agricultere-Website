@@ -1,0 +1,33 @@
+﻿@using EntityLayer.Concrete
+@model List<Service>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Service List</h1>
+
+<div class="table-responsive pt-3">
+<table class="table table-striped">
+    <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Delete</th>
+        <th>Edit</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ServiceID</td>
+            <td>@item.Title</td>
+            <td><a href="/Service/DeleteService/@item.ServiceID" class="btn btn-outline-danger">Remove</a></td>
+            <td><a href="/Service/UpdateService/@item.ServiceID" class="btn btn-outline-info">Edit</a></td>
+
+
+        </tr>
+    }
+</table>
+</div>
+<a href="/Service/AddService" class="btn btn-outline-success">Add</a>

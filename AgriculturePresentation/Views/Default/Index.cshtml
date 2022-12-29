@@ -1,0 +1,24 @@
+﻿@using EntityLayer.Concrete
+@model List<Service>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Services List</h1>
+
+<table class="table table-striped">
+    <tr>
+        <th>#</th> 
+        <th>Title</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ServiceID</td>
+            <td>@item.Title</td>
+
+        </tr>
+    }
+</table>
