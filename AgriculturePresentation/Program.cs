@@ -12,6 +12,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IServiceService, ServiceManager>(); //required command to capture constructors
 builder.Services.AddScoped<IServiceDal, EfServiceDal>(); //used to include entity part
 
+builder.Services.AddScoped<ITeamService, TeamManager>();
+builder.Services.AddScoped<ITeamDal, EfTeamDal>();
+
 builder.Services.AddDbContext<AgricultureContext>();
 
 var app = builder.Build();

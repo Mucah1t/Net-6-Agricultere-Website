@@ -1,0 +1,57 @@
+﻿@model EntityLayer.Concrete.Team
+@{
+    ViewData["Title"] = "UpdateTeam";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+
+
+
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Team Member Edit </h4>
+            <br />
+
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    @Html.HiddenFor(x=>x.PersonID)
+
+                    <span asp-validation-for="PersonName" class="text-danger"></span>
+                    <input type="text" class="form-control" placeholder="Name&Surname" asp-for="PersonName">
+                </div>
+                <div class="form-group">
+                    <span asp-validation-for="PersonDuty" class="text-danger"></span>
+                    <input type="text" class="form-control" placeholder="Duty" asp-for="PersonDuty">
+                </div>
+                <div class="form-group">
+                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                    <input type="text" class="form-control" placeholder="Image Path" asp-for="ImageUrl">
+                </div>
+                <div class="form-group">
+
+                    <input type="text" class="form-control" placeholder="Enter Facebook Link" asp-for="FacebookUrl">
+                </div>
+                <div class="form-group">
+
+                    <input type="text" class="form-control" placeholder="Enter Instagram Link" asp-for="InstagramUrl">
+                </div>
+                <div class="form-group">
+
+                    <input type="text" class="form-control" placeholder="Enter Twitter Link" asp-for="TwitterUrl">
+                </div>
+
+                <div class="form-group">
+
+                    <input type="text" class="form-control" placeholder="Enter Website Link" asp-for="WebsiteUrl">
+                </div>
+
+                <button type="submit" class="btn btn-outline-info me-2">Save</button>
+
+            </form>
+        </div>
+    </div>
+</div>

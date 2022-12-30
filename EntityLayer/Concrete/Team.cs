@@ -13,19 +13,19 @@ namespace EntityLayer.Concrete
         public int PersonID { get; set; }
 
 
-        public int PersonName { get; set; }
+        public string PersonName { get; set; }
 
-        public int PersonDuty { get; set; }
+        public string PersonDuty { get; set; }
 
-        public int ImageUrl { get; set; }
+        public string ImageUrl { get; set; }
 
-        public int FacebookUrl { get; set; }
+        public string FacebookUrl { get; set; }
 
-        public int InstagramUrl { get; set; }
+        public string InstagramUrl { get; set; }
 
-        public int WebsiteUrl { get; set; }
+        public string WebsiteUrl { get; set; }
 
-        public int TwitterUrl { get; set; }
+        public string TwitterUrl { get; set; }
 
 
     }
