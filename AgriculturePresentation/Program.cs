@@ -12,8 +12,18 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IServiceService, ServiceManager>(); //required command to capture constructors
 builder.Services.AddScoped<IServiceDal, EfServiceDal>(); //used to include entity part
 
+builder.Services.AddScoped<IAnnouncementService, AnnouncementManager>();
+builder.Services.AddScoped<IAnnouncumentDal, EfAnnouncementDal>();
+
 builder.Services.AddScoped<ITeamService, TeamManager>();
 builder.Services.AddScoped<ITeamDal, EfTeamDal>();
+
+builder.Services.AddScoped<IImageService, ImageManager>();
+builder.Services.AddScoped<IImageDal, EfImageDal>();
+
+builder.Services.AddScoped<IAdressService, AddressManager>();
+builder.Services.AddScoped<IAdressDal, EfAdressDal>();
+
 
 builder.Services.AddDbContext<AgricultureContext>();
 

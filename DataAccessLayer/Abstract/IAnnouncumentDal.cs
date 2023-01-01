@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IAnnocumentDal:IGenericDal<Announcement>
+    public interface IAnnouncumentDal:IGenericDal<Announcement>
     {
+        void AnnouncementStatustoTrue(int id);
+
+        void AnnouncementStatustoFalse(int id);
+
     }
 }

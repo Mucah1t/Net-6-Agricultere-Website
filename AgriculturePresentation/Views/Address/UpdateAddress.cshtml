@@ -1,0 +1,43 @@
+﻿@model EntityLayer.Concrete.Adress
+@{
+    ViewData["Title"] = "UpdateAddress";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Address Info Edit Page </h4>
+            <br />
+
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    @Html.HiddenFor(x=>x.AdressID)
+                    <span asp-validation-for="Description1" class="text-danger"></span>
+                    <textarea cols="60" rows="2" asp-for="Description1" placeholder="Enter Address Information" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <span asp-validation-for="Description2" class="text-danger"></span>
+                    <textarea cols="60" rows="2" asp-for="Description2" placeholder="Additional Address Information" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <span asp-validation-for="Description3" class="text-danger"></span>
+                    <textarea cols="60" rows="2" asp-for="Description3" placeholder="Additional Address Informationn" class="form-control"></textarea>
+                </div> 
+                <div class="form-group">
+                    <span asp-validation-for="Description4" class="text-danger"></span>
+                    <textarea cols="60" rows="2" asp-for="Description4" placeholder="Enter Phone Number" class="form-control"></textarea>
+                </div>
+                    <div class="form-group">
+                    <span asp-validation-for="Location" class="text-danger"></span>
+                    <textarea cols="60" rows="2" asp-for="Location" placeholder="Location" class="form-control"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-info me-2">Save</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
