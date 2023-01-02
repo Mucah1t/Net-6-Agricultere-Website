@@ -40,7 +40,14 @@
   <!-- container-scroller -->
   <!-- plugins:js -->
     @await Html.PartialAsync("/Views/AdminPartial/PartialScript.cshtml")
-
+   
+        <script>
+          function myfunction(){
+           var x = document.querySelector(".dropdown-menu");
+           console.log(x);
+          }  
+        </script>
+   
 </body>
 
 </html>
