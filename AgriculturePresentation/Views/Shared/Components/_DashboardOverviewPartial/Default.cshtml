@@ -20,7 +20,7 @@
                             <div class="d-none d-xl-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
                                 <i class="mdi mdi-calendar-heart icon-lg me-3 text-primary"></i>
                                 <div class="d-flex flex-column justify-content-around">
-                                    <small class="mb-1 text-muted">Tarih</small>
+                                    <small class="mb-1 text-muted">Date</small>
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <h5 class="mb-0 d-inline-block">@DateTime.Now.ToShortDateString()</h5>
@@ -32,28 +32,28 @@
                             <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
                                 <i class="mdi mdi-currency-usd me-3 icon-lg text-danger"></i>
                                 <div class="d-flex flex-column justify-content-around">
-                                    <small class="mb-1 text-muted">Çalışan Sayısı</small>
+                                    <small class="mb-1 text-muted">Workers</small>
                                     <h5 class="me-2 mb-0">@ViewBag.teamCount</h5>
                                 </div>
                             </div>
                             <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
                                 <i class="mdi mdi-eye me-3 icon-lg text-success"></i>
                                 <div class="d-flex flex-column justify-content-around">
-                                    <small class="mb-1 text-muted">Hizmet Sayısı</small>
+                                    <small class="mb-1 text-muted">Services</small>
                                     <h5 class="me-2 mb-0">@ViewBag.serviceCount</h5>
                                 </div>
                             </div>
                             <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
                                 <i class="mdi mdi-download me-3 icon-lg text-warning"></i>
                                 <div class="d-flex flex-column justify-content-around">
-                                    <small class="mb-1 text-muted">Gelen Mesaj</small>
+                                    <small class="mb-1 text-muted">Inbox</small>
                                     <h5 class="me-2 mb-0">@ViewBag.messageCount</h5>
                                 </div>
                             </div>
                             <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
                                 <i class="mdi mdi-flag me-3 icon-lg text-danger"></i>
                                 <div class="d-flex flex-column justify-content-around">
-                                    <small class="mb-1 text-muted">Bu Ay Gelen Mesaj</small>
+                                    <small class="mb-1 text-muted">Messages This Month</small>
                                     <h5 class="me-2 mb-0">@ViewBag.currentMonthMessage</h5>
                                 </div>
                             </div>
@@ -128,29 +128,23 @@
                             <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
                                 <i class="mdi mdi-currency-usd me-3 icon-lg text-danger"></i>
                                 <div class="d-flex flex-column justify-content-around">
-                                    <small class="mb-1 text-muted">Bakliyat Yönetimi</small>
-                                    <h5 class="me-2 mb-0">@ViewBag.bakliyatYonetimi</h5>
+                                    <small class="mb-1 text-muted">Field Worker</small>
+                                    <h5 class="me-2 mb-0">@ViewBag.fieldWorker</h5>
                                 </div>
                             </div>
                             <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
                                 <i class="mdi mdi-eye me-3 icon-lg text-success"></i>
                                 <div class="d-flex flex-column justify-content-around">
-                                    <small class="mb-1 text-muted">Ürün Pazarlama</small>
+                                    <small class="mb-1 text-muted">Product Marketing</small>
                                     <h5 class="me-2 mb-0">@ViewBag.urunPazarlama</h5>
                                 </div>
                             </div>
-                            <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
-                                <i class="mdi mdi-download me-3 icon-lg text-warning"></i>
-                                <div class="d-flex flex-column justify-content-around">
-                                    <small class="mb-1 text-muted">Sü Üretici</small>
-                                    <h5 class="me-2 mb-0">@ViewBag.sutUretici</h5>
-                                </div>
-                            </div>
+                           
                             <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
                                 <i class="mdi mdi-flag me-3 icon-lg text-danger"></i>
                                 <div class="d-flex flex-column justify-content-around">
-                                    <small class="mb-1 text-muted">Gübre Yönetimi</small>
-                                    <h5 class="me-2 mb-0">@ViewBag.gubreYonetimi</h5>
+                                    <small class="mb-1 text-muted">fertilizer</small>
+                                    <h5 class="me-2 mb-0">@ViewBag.fertilizer</h5>
                                 </div>
                             </div>
                         </div>

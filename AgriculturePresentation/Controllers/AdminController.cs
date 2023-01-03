@@ -5,11 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AgricultureUI.Controllers
 {
-    public class AdminControllerController : Controller
+    public class AdminController : Controller
     {
         private readonly IAdminService _adminService;
 
-        public AdminControllerController(IAdminService adminService)
+        public AdminController(IAdminService adminService)
         {
             _adminService = adminService;
         }
