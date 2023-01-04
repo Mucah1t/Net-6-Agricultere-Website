@@ -1,4 +1,5 @@
-﻿@{
+﻿@model AgricultureUI.Models.SignViewModel
+@{
     Layout = null;
 }
 
@@ -28,12 +29,12 @@
 				<div class="form-section">
 					<h3>Login</h3>
 					<h6>To continue with Us</h6>
-					<form action="#" method="post" class="signin-form">
+					<form method="post" class="signin-form">
 						<div class="form-input">
-							<input type="text" name="Username" placeholder="UserName" required="" autofocus>
+							<input type="text" asp-for="username" placeholder="UserName" required="" autofocus>
 						</div>
 						<div class="form-input">
-							<input type="password" name="password" placeholder="Password" required="">
+							<input type="password" asp-for="password" placeholder="Password" required="">
 						</div>
 						<label class="check-remaind">
 							<input type="checkbox">
